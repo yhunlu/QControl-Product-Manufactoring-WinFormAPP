@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QControl", "QControl\QControl.csproj", "{A63D16D7-C40E-4A25-B11E-026C750142A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessDLL", "..\BussinessDLL\BussinessDLL.csproj", "{9BA96ACF-6543-41EC-9D3C-F4233DB5A0C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A63D16D7-C40E-4A25-B11E-026C750142A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A63D16D7-C40E-4A25-B11E-026C750142A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A63D16D7-C40E-4A25-B11E-026C750142A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA96ACF-6543-41EC-9D3C-F4233DB5A0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA96ACF-6543-41EC-9D3C-F4233DB5A0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA96ACF-6543-41EC-9D3C-F4233DB5A0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA96ACF-6543-41EC-9D3C-F4233DB5A0C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

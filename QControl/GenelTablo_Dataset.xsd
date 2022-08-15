@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GenelTablo_Dataset" targetNamespace="http://tempuri.org/GenelTablo_Dataset.xsd" xmlns:mstns="http://tempuri.org/GenelTablo_Dataset.xsd" xmlns="http://tempuri.org/GenelTablo_Dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GenelTablo_Dataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="GenelTablo_Dataset" msprop:Generator_UserDSName="GenelTablo_Dataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Kullanım_Alani" msprop:Generator_ColumnVarNameInTable="columnKullanım_Alani" msprop:Generator_ColumnPropNameInRow="Kullanım_Alani" msprop:Generator_ColumnPropNameInTable="Kullanım_AlaniColumn" msprop:Generator_UserColumnName="Kullanım_Alani" type="xs:string" minOccurs="0" />
+              <xs:element name="KOD" msprop:Generator_ColumnVarNameInTable="columnKOD" msprop:Generator_ColumnPropNameInRow="KOD" msprop:Generator_ColumnPropNameInTable="KODColumn" msprop:Generator_UserColumnName="KOD" type="xs:string" minOccurs="0" />
+              <xs:element name="Ebatlar" msprop:Generator_ColumnVarNameInTable="columnEbatlar" msprop:Generator_ColumnPropNameInRow="Ebatlar" msprop:Generator_ColumnPropNameInTable="EbatlarColumn" msprop:Generator_UserColumnName="Ebatlar" type="xs:string" minOccurs="0" />
+              <xs:element name="Uretim_Adet" msprop:Generator_ColumnVarNameInTable="columnUretim_Adet" msprop:Generator_ColumnPropNameInRow="Uretim_Adet" msprop:Generator_ColumnPropNameInTable="Uretim_AdetColumn" msprop:Generator_UserColumnName="Uretim_Adet" type="xs:int" minOccurs="0" />
+              <xs:element name="Uretim_Kg" msprop:Generator_ColumnVarNameInTable="columnUretim_Kg" msprop:Generator_ColumnPropNameInRow="Uretim_Kg" msprop:Generator_ColumnPropNameInTable="Uretim_KgColumn" msprop:Generator_UserColumnName="Uretim_Kg" type="xs:double" minOccurs="0" />
+              <xs:element name="Uretim_Total_Kg" msprop:Generator_ColumnVarNameInTable="columnUretim_Total_Kg" msprop:Generator_ColumnPropNameInRow="Uretim_Total_Kg" msprop:Generator_ColumnPropNameInTable="Uretim_Total_KgColumn" msprop:Generator_UserColumnName="Uretim_Total_Kg" type="xs:double" minOccurs="0" />
+              <xs:element name="Hurda_Adet" msprop:Generator_ColumnVarNameInTable="columnHurda_Adet" msprop:Generator_ColumnPropNameInRow="Hurda_Adet" msprop:Generator_ColumnPropNameInTable="Hurda_AdetColumn" msprop:Generator_UserColumnName="Hurda_Adet" type="xs:int" minOccurs="0" />
+              <xs:element name="Hurda_Kg" msprop:Generator_ColumnVarNameInTable="columnHurda_Kg" msprop:Generator_ColumnPropNameInRow="Hurda_Kg" msprop:Generator_ColumnPropNameInTable="Hurda_KgColumn" msprop:Generator_UserColumnName="Hurda_Kg" type="xs:double" minOccurs="0" />
+              <xs:element name="Hurda_Kendi_Uretimine_göre" msprop:Generator_ColumnVarNameInTable="columnHurda_Kendi_Uretimine_göre" msprop:Generator_ColumnPropNameInRow="Hurda_Kendi_Uretimine_göre" msprop:Generator_ColumnPropNameInTable="Hurda_Kendi_Uretimine_göreColumn" msprop:Generator_UserColumnName="Hurda_Kendi_Uretimine_göre" type="xs:double" minOccurs="0" />
+              <xs:element name="Hurda_Total_Uretime_göre" msprop:Generator_ColumnVarNameInTable="columnHurda_Total_Uretime_göre" msprop:Generator_ColumnPropNameInRow="Hurda_Total_Uretime_göre" msprop:Generator_ColumnPropNameInTable="Hurda_Total_Uretime_göreColumn" msprop:Generator_UserColumnName="Hurda_Total_Uretime_göre" type="xs:double" minOccurs="0" />
+              <xs:element name="Hedef" msprop:Generator_ColumnVarNameInTable="columnHedef" msprop:Generator_ColumnPropNameInRow="Hedef" msprop:Generator_ColumnPropNameInTable="HedefColumn" msprop:Generator_UserColumnName="Hedef" type="xs:double" minOccurs="0" />
+              <xs:element name="Ozur_Adet" msprop:Generator_ColumnVarNameInTable="columnOzur_Adet" msprop:Generator_ColumnPropNameInRow="Ozur_Adet" msprop:Generator_ColumnPropNameInTable="Ozur_AdetColumn" msprop:Generator_UserColumnName="Ozur_Adet" type="xs:int" minOccurs="0" />
+              <xs:element name="Ozur_Kg" msprop:Generator_ColumnVarNameInTable="columnOzur_Kg" msprop:Generator_ColumnPropNameInRow="Ozur_Kg" msprop:Generator_ColumnPropNameInTable="Ozur_KgColumn" msprop:Generator_UserColumnName="Ozur_Kg" type="xs:double" minOccurs="0" />
+              <xs:element name="Ozur_Kendi_Uretimine_göre" msprop:Generator_ColumnVarNameInTable="columnOzur_Kendi_Uretimine_göre" msprop:Generator_ColumnPropNameInRow="Ozur_Kendi_Uretimine_göre" msprop:Generator_ColumnPropNameInTable="Ozur_Kendi_Uretimine_göreColumn" msprop:Generator_UserColumnName="Ozur_Kendi_Uretimine_göre" type="xs:double" minOccurs="0" />
+              <xs:element name="Ozur_Total_Uretime_göre" msprop:Generator_ColumnVarNameInTable="columnOzur_Total_Uretime_göre" msprop:Generator_ColumnPropNameInRow="Ozur_Total_Uretime_göre" msprop:Generator_ColumnPropNameInTable="Ozur_Total_Uretime_göreColumn" msprop:Generator_UserColumnName="Ozur_Total_Uretime_göre" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

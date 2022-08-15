@@ -8,9 +8,25 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>QControl</RootNamespace>
     <AssemblyName>QControl</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,9 +47,17 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>loginicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,14 +69,243 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Bitirme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Bitirme.Designer.cs">
+      <DependentUpon>Bitirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bitirme_Dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bitirme_Dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataIntegration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataIntegration.Designer.cs">
+      <DependentUpon>DataIntegration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISLASTIK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISLASTIK.Designer.cs">
+      <DependentUpon>DISLASTIK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DislastikProsesAnaliz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DislastikProsesAnaliz.Designer.cs">
+      <DependentUpon>DislastikProsesAnaliz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EbatKg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EbatKg.Designer.cs">
+      <DependentUpon>EbatKg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromDLL.cs" />
+    <Compile Include="GenelTablo_Dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenelTablo_Dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="geneltablo_ikinci.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>geneltablo_ikinci.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hurda_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hurda_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IKINCIKALITE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IKINCIKALITE.Designer.cs">
+      <DependentUpon>IKINCIKALITE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IkinciKaliteTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IkinciKaliteTT.Designer.cs">
+      <DependentUpon>IkinciKaliteTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ikincikalite_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ikincikalite_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LastikTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastikTable.Designer.cs">
+      <DependentUpon>LastikTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lastik_Uretim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lastik_Uretim.Designer.cs">
+      <DependentUpon>Lastik_Uretim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManPower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManPower.Designer.cs">
+      <DependentUpon>ManPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlcLive_dataset.cs">
+      <DependentUpon>PlcLive_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PlcLive_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlcLive_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="plcverimlilik_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>plcverimlilik_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PLCvsVerimlilik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLCvsVerimlilik.Designer.cs">
+      <DependentUpon>PLCvsVerimlilik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresProduct_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PresProduct_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Press.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Press.Designer.cs">
+      <DependentUpon>Press.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pressanaliz_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pressanaliz_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pressqty.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pressqty.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="press_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>press_dataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaporEngel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporEngel.Designer.cs">
+      <DependentUpon>RaporEngel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToKnowFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToKnowFormat.Designer.cs">
+      <DependentUpon>ToKnowFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TyreControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TyreControl.Designer.cs">
+      <DependentUpon>TyreControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TyreProduct.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TyreProduct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users.Designer.cs">
+      <DependentUpon>users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerimlilikVsPLC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerimlilikVsPLC.Designer.cs">
+      <DependentUpon>VerimlilikVsPLC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerPanel.Designer.cs">
+      <DependentUpon>WorkerPanel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bitirme.resx">
+      <DependentUpon>Bitirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bitirme_report.rdlc" />
+    <EmbeddedResource Include="DataIntegration.resx">
+      <DependentUpon>DataIntegration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISLASTIK.resx">
+      <DependentUpon>DISLASTIK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DislastikProsesAnaliz.resx">
+      <DependentUpon>DislastikProsesAnaliz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EbatKg.resx">
+      <DependentUpon>EbatKg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="geneltablo_ikinci.rdlc" />
+    <EmbeddedResource Include="Hurda.rdlc" />
+    <EmbeddedResource Include="IKINCIKALITE.resx">
+      <DependentUpon>IKINCIKALITE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IkinciKaliteTT.resx">
+      <DependentUpon>IkinciKaliteTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ikincikalite_report.rdlc" />
+    <EmbeddedResource Include="LastikTable.resx">
+      <DependentUpon>LastikTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lastik_Uretim.resx">
+      <DependentUpon>Lastik_Uretim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManPower.resx">
+      <DependentUpon>ManPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlcLiveData.rdlc" />
+    <EmbeddedResource Include="plcverimlilik.rdlc" />
+    <EmbeddedResource Include="PLCvsVerimlilik.resx">
+      <DependentUpon>PLCvsVerimlilik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Press.rdlc" />
+    <EmbeddedResource Include="Press.resx">
+      <DependentUpon>Press.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pressanaliz.rdlc" />
+    <EmbeddedResource Include="pressmekanik.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,7 +314,150 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RaporEngel.resx">
+      <DependentUpon>RaporEngel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ToKnowFormat.resx">
+      <DependentUpon>ToKnowFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TyreControl.resx">
+      <DependentUpon>TyreControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TyreProduct.rdlc" />
+    <EmbeddedResource Include="USERS.resx">
+      <DependentUpon>users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerimlilikVsPLC.resx">
+      <DependentUpon>VerimlilikVsPLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerPanel.resx">
+      <DependentUpon>WorkerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bitirme_Dataset.xsc">
+      <DependentUpon>bitirme_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="bitirme_Dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bitirme_Dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="bitirme_Dataset.xss">
+      <DependentUpon>bitirme_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="GenelTablo_Dataset.xsc">
+      <DependentUpon>GenelTablo_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="GenelTablo_Dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GenelTablo_Dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GenelTablo_Dataset.xss">
+      <DependentUpon>GenelTablo_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="geneltablo_ikinci.xsc">
+      <DependentUpon>geneltablo_ikinci.xsd</DependentUpon>
+    </None>
+    <None Include="geneltablo_ikinci.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>geneltablo_ikinci.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="geneltablo_ikinci.xss">
+      <DependentUpon>geneltablo_ikinci.xsd</DependentUpon>
+    </None>
+    <None Include="hurda_dataset.xsc">
+      <DependentUpon>hurda_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="hurda_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hurda_dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="hurda_dataset.xss">
+      <DependentUpon>hurda_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="ikincikalite_dataset.xsc">
+      <DependentUpon>ikincikalite_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="ikincikalite_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ikincikalite_dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ikincikalite_dataset.xss">
+      <DependentUpon>ikincikalite_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PlcLive_dataset.xsc">
+      <DependentUpon>PlcLive_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="PlcLive_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlcLive_dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PlcLive_dataset.xss">
+      <DependentUpon>PlcLive_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="plcverimlilik_dataset.xsc">
+      <DependentUpon>plcverimlilik_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="plcverimlilik_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>plcverimlilik_dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="plcverimlilik_dataset.xss">
+      <DependentUpon>plcverimlilik_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="PresProduct_dataset.xsc">
+      <DependentUpon>PresProduct_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="PresProduct_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PresProduct_dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PresProduct_dataset.xss">
+      <DependentUpon>PresProduct_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="pressanaliz_dataset.xsc">
+      <DependentUpon>pressanaliz_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="pressanaliz_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pressanaliz_dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="pressanaliz_dataset.xss">
+      <DependentUpon>pressanaliz_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="pressqty.xsc">
+      <DependentUpon>pressqty.xsd</DependentUpon>
+    </None>
+    <None Include="pressqty.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pressqty.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="pressqty.xss">
+      <DependentUpon>pressqty.xsd</DependentUpon>
+    </None>
+    <None Include="press_dataset.xsc">
+      <DependentUpon>press_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="press_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>press_dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="press_dataset.xss">
+      <DependentUpon>press_dataset.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -71,9 +467,135 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TyreProduct.xsc">
+      <DependentUpon>TyreProduct.xsd</DependentUpon>
+    </None>
+    <None Include="TyreProduct.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TyreProduct.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TyreProduct.xss">
+      <DependentUpon>TyreProduct.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BussinessDLL\BussinessDLL.csproj">
+      <Project>{9ba96acf-6543-41ec-9d3c-f4233db5a0c4}</Project>
+      <Name>BussinessDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signal attention.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lastik_nedir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="loginicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxRDPCOMAPILib">
+      <Guid>{CC802D05-AE07-4C15-B496-DB9D22AA0A84}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="RDPCOMAPILib">
+      <Guid>{CC802D05-AE07-4C15-B496-DB9D22AA0A84}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urunler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kurumsal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bayiler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiyat_listesi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kanik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_ozka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

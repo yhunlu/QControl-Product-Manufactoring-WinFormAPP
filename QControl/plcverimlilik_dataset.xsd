@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="plcverimlilik_dataset" targetNamespace="http://tempuri.org/plcverimlilik_dataset.xsd" xmlns:mstns="http://tempuri.org/plcverimlilik_dataset.xsd" xmlns="http://tempuri.org/plcverimlilik_dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="plcverimlilik_dataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="plcverimlilik_dataset" msprop:Generator_UserDSName="plcverimlilik_dataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Press" msprop:Generator_ColumnVarNameInTable="columnPress" msprop:Generator_ColumnPropNameInRow="Press" msprop:Generator_ColumnPropNameInTable="PressColumn" msprop:Generator_UserColumnName="Press" type="xs:string" minOccurs="0" />
+              <xs:element name="Lastik" msprop:Generator_ColumnVarNameInTable="columnLastik" msprop:Generator_ColumnPropNameInRow="Lastik" msprop:Generator_ColumnPropNameInTable="LastikColumn" msprop:Generator_UserColumnName="Lastik" type="xs:string" minOccurs="0" />
+              <xs:element name="PLAN_1" msprop:Generator_ColumnVarNameInTable="columnPLAN_1" msprop:Generator_ColumnPropNameInRow="PLAN_1" msprop:Generator_ColumnPropNameInTable="PLAN_1Column" msprop:Generator_UserColumnName="PLAN_1" type="xs:int" minOccurs="0" />
+              <xs:element name="PLC_1" msprop:Generator_ColumnVarNameInTable="columnPLC_1" msprop:Generator_ColumnPropNameInRow="PLC_1" msprop:Generator_ColumnPropNameInTable="PLC_1Column" msprop:Generator_UserColumnName="PLC_1" type="xs:int" minOccurs="0" />
+              <xs:element name="PLAN_2" msprop:Generator_ColumnVarNameInTable="columnPLAN_2" msprop:Generator_ColumnPropNameInRow="PLAN_2" msprop:Generator_ColumnPropNameInTable="PLAN_2Column" msprop:Generator_UserColumnName="PLAN_2" type="xs:int" minOccurs="0" />
+              <xs:element name="PLC_2" msprop:Generator_ColumnVarNameInTable="columnPLC_2" msprop:Generator_ColumnPropNameInRow="PLC_2" msprop:Generator_ColumnPropNameInTable="PLC_2Column" msprop:Generator_UserColumnName="PLC_2" type="xs:int" minOccurs="0" />
+              <xs:element name="PLAN_3" msprop:Generator_ColumnVarNameInTable="columnPLAN_3" msprop:Generator_ColumnPropNameInRow="PLAN_3" msprop:Generator_ColumnPropNameInTable="PLAN_3Column" msprop:Generator_UserColumnName="PLAN_3" type="xs:int" minOccurs="0" />
+              <xs:element name="PLC_3" msprop:Generator_ColumnVarNameInTable="columnPLC_3" msprop:Generator_ColumnPropNameInRow="PLC_3" msprop:Generator_ColumnPropNameInTable="PLC_3Column" msprop:Generator_UserColumnName="PLC_3" type="xs:int" minOccurs="0" />
+              <xs:element name="PLAN_Toplam" msprop:Generator_ColumnVarNameInTable="columnPLAN_Toplam" msprop:Generator_ColumnPropNameInRow="PLAN_Toplam" msprop:Generator_ColumnPropNameInTable="PLAN_ToplamColumn" msprop:Generator_UserColumnName="PLAN_Toplam" type="xs:int" minOccurs="0" />
+              <xs:element name="PLC_Toplam" msprop:Generator_ColumnVarNameInTable="columnPLC_Toplam" msprop:Generator_ColumnPropNameInRow="PLC_Toplam" msprop:Generator_ColumnPropNameInTable="PLC_ToplamColumn" msprop:Generator_UserColumnName="PLC_Toplam" type="xs:int" minOccurs="0" />
+              <xs:element name="KONTROL_ET" msprop:Generator_ColumnVarNameInTable="columnKONTROL_ET" msprop:Generator_ColumnPropNameInRow="KONTROL_ET" msprop:Generator_ColumnPropNameInTable="KONTROL_ETColumn" msprop:Generator_UserColumnName="KONTROL_ET" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
