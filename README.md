@@ -1,5 +1,5 @@
-# PLM System - WinFormAPP
-## This is product control APP as PLM System for Tire Manufacturing Company in Turkey. Used Features: MSSQL + C# + report-viewer for reports.
+# PLM System - Desktop Application
+## This is product control APP as PLM System for Tire Manufacturing Company in Turkey. Used Features: MSSQL + C# + PowerBI RDLC for reports.
 ## This App able to fetch real data from machines and crosscheck with Planning database.
 ## It is preparation of Industry 4.0
 
