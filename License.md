@@ -1,7 +1,7 @@
 # PROPRIETARY LICENSE
 
 **Copyright (c) 2018 YAHYA UNLU**  
-**Contact:** [yhunlu87@gmail.com](mailto:yhunlu87@gmail.com)
+**Contact:** [Email Me](mailto:yhunlu87@gmail.com)
 
 This repository and all its contents are the intellectual property of **YAHYA UNLU**.  
 Unauthorized copying, distribution, or commercial use is strictly prohibited.
